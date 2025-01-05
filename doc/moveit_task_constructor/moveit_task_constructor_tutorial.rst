@@ -75,7 +75,7 @@ There are three possible stages relating to the result flow: generator, propagat
 **Generators** compute their results independently of their neighbor stages and pass them in both directions, backwards and forwards.
 An example is an IK sampler for geometric poses where approaching and departing motions (neighbor stages) depend on the solution.
 
-**Propagators** receive the result of one neighbor stage, solve a subproblem and then propagate their result to the neighbor on the opposite site.
+**Propagators** receive the result of one neighbor stage, solve a subproblem and then propagate their result to the neighbor on the opposite side.
 Depending on the implementation, propagating stages can pass solutions forward, backward or in both directions separately.
 An example is a stage that computes a Cartesian path based on either a start or a goal state.
 
